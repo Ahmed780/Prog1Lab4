@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author Uzair Ahmed 
  */
 
-public class Word {
+public class Q44 {
   public static void main(String[] args) {
 
     Scanner sc = new Scanner (System.in);
