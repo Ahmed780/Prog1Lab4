@@ -11,7 +11,7 @@ import java.util.Scanner;
  * This program that uses a for loop to count how many multiples of 7 are between 33 and 97, inclusive
  * @author Uzair Ahmed 
  */
-public class Count {
+public class Q48 {
   public static void main(String[] args) {
 
         int multiples=0;
