@@ -15,31 +15,47 @@ import java.util.Scanner;
  */
 public class Q3 {
 	public static void main(String[] args) {
-
+		
+		do {
+			
 		double random = Math.round(Math.random() * 100);
 		double word;
-
+		double replay;
+		
 		System.out.println(random);
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Guess the number");
 		word = sc.nextDouble();
 		
-		int a = 1;
+		int trials = 1;
 		for (int i = 1; i < 10; i++) {
 			
 		if (word == random) {
 		System.out.println("\nCorrect");
+		 System.out.println("Press 1 to play again");
+        	replay=sc.nextInt();
+        	if(replay!=1)
+        	System.exit(0);
 		i = 10;
 		} 
+		
 		else {
 		System.out.println("Try Again!");
 		word = sc.nextDouble();
-		a += 1;
+		trials += 1;
 		}
-		}
-		if(a >= 10) {
-		System.out.println("\nUnlucky");			
-		}
+		
+		if(trials >= 10) {
+
+		System.out.println("Incorrect");
+            	System.out.println("\nYou got no trials left,press 0 to exit");
+            	replay=sc.nextInt();
+            	if(replay!=1)
+                System.exit(0);
+           }
+           }     
+        }
+        while(true);
 	}
 
 }
