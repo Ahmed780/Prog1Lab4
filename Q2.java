@@ -24,14 +24,14 @@ public class Q2{
 	for (int i=0; i < email.length(); i++)
         email.charAt(i);
 		
-	if(email.contains("..")||email.contains(".@")||email.contains("@.")||email.contains("._.")){
-	System.out.println("\nInvalid");
+	if(email.contains("..")||email.contains(".@")||email.contains("@.")){
+	System.out.println("\nThe email is invalid");
 	}
 	else if(email.endsWith(".")||email.endsWith("@"))
-	System.out.println("\nInvalid");
+	System.out.println("\nThe email is invalid");
 	else if(email.contains("@")&&(email.contains(".")))
-	System.out.println("\nValid");
+	System.out.println("\The email is valid");
 	else
-	System.out.println("\nInvalid");
+	System.out.println("\nThe email is invalid");
 	}
 }
